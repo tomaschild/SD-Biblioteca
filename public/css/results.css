@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+}
+
+.container_banner{
+	height: 20vh;
+	width: 100vw;
+}
+
+.banner{
+	height: 100%;
+	width: 100%;
+
+	background-image: url('/resources/background2.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.titulo_busqueda{
+	height: 5vh;
+	width: 100vw;
+	background: #fff;
+	
+	text-align: center;
+	font-size: 30px;
+	border-bottom-style: solid;
+	padding-top: 5vh;
+
+	font-family: Archivo Narrow;
+}
+
+.container_resultados{
+	height: 70vh;
+	width: 100vw;
+	background: #fff;
+}
+
+.item_resultado{
+	height: 10vh;
+	width: 90vw;
+	padding-top: 2vh; 
+	padding-left: 10vw;
+	background: #ddd;	
+}

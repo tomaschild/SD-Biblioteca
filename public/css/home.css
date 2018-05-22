@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+}
+
+.container_fondo{
+	height: 100vh;
+	width: 100vw;
+}
+
+.fondo{
+	height: 100vh;
+	width: 100vw;
+
+	background-image: url('/resources/background1.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	position: relative;
+}
+
+.titulo{
+	width: 100vw;
+	height: 25vh;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 250px;
+	font-family: Archivo Narrow;
+}
+
+.contenedor{
+	width: 100vw;
+	height: 50px;
+	opacity: 1;
+	position: absolute;
+	top: 50vh;
+}
+
+.centrador{
+	height: 100%;
+	width: 25%;
+	opacity: 0;
+	float: left;
+}
+
+.contenedor_barra_busqueda{
+	height: 100%;
+	width: 50%;
+	background: #fff;
+	float: left;
+}
+
+.barra_busqueda{
+	background: #fff;
+	border: 0;
+	height: 100%;
+	width: 100%;
+
+	text-align: center;
+	font-size: 35px;
+}
