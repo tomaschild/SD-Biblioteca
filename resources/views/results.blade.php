@@ -12,17 +12,21 @@
 </head>
 <body>
 	<div class="container_banner">
-		<div class="banner"></div>
+		<div class="banner">
+			<div class="barra_navegacion">
+				<div class="contenedor_links">
+					<a class="link_izq" href="{{ route('home') }}">Buscar</a>
+					<a class="link_der" href="{{ route('upload') }}">Upload</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="titulo_busqueda">Mostrando resultados para: "hola mundo"</div>
+	<div class="titulo_busqueda">Mostrando resultados para: "{{ request()->input('busqueda') }}"</div>
 	<div class="container_resultados">
-		<div class="item_resultado">Resultado 1</div>
-		<div class="item_resultado">Resultado 2</div>
-		<div class="item_resultado">Resultado 3</div>
-		<div class="item_resultado">Resultado 4</div>
-		<div class="item_resultado">Resultado 5</div>
-		<div class="item_resultado">Resultado 6</div>
+		@foreach ($documents as $document)
+			<div class="item_resultado">{{ $document->document_title }}</div>
+		@endforeach
 	</div>
 
 </body>

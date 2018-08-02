@@ -1,6 +1,6 @@
 <?php
 
-/*
+/* 
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -13,8 +13,12 @@
 
 Route::get('/', function () {
     return view('home');
+})->name('home');
+
+Route::get('/results', ['uses' => 'DocumentController@search'])->name('results');
+
+Route::get('/upload', function () {
+    return view('upload');
 });
 
-Route::get('/results', function () {
-    return view('results');
-});
+Route::post('/upload', ['uses' => 'DocumentController@store'])->name('upload'); 

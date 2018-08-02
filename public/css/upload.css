@@ -11,7 +11,7 @@
 	height: 100%;
 	width: 100%;
 
-	background-image: url('/resources/background2.jpeg');
+	background-image: url('/resources/background3.jpeg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -40,7 +40,7 @@
 	font-size: 25px;
 }
 
-.titulo_busqueda{
+.title{
 	height: 5vh;
 	width: 100vw;
 	background: #fff;
@@ -53,16 +53,27 @@
 	font-family: Archivo Narrow;
 }
 
-.container_resultados{
+.form_container{
 	height: 70vh;
 	width: 100vw;
-	background: #fff;
+	background: #aaa;
 }
 
-.item_resultado{
-	height: 10vh;
+.form_section{
+	height: 30vh;
 	width: 90vw;
 	padding-top: 2vh; 
 	padding-left: 10vw;
-	background: #ddd;	
+	background: #ddd;
+	border: 1px solid;
+}
+
+.section_title{
+	height: 5vh;
+	width: 100vw;
+	
+	font-size: 25px;
+	padding-top: 5vh;
+
+	font-family: Archivo Narrow;
 }
