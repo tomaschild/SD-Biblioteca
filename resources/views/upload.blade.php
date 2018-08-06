@@ -14,7 +14,7 @@
 			<div class="barra_navegacion">
 				<div class="contenedor_links">
 					<a class="link_izq" href="{{ route('home') }}">Buscar</a>
-					<a class="link_der" href="{{ route('upload') }}">Upload</a>
+					<a class="link_der" href="{{ route('upload') }}">Subir</a>
 				</div>
 			</div>
 		</div>
@@ -22,6 +22,9 @@
 
 	<div class="title">Agregar un registro</div>
 	<div class="form_container">
+		@if(!empty($success))
+			<h1>Archivo subido exitosamente</h1>
+		@endif
 		<div class="form_section">
 			<div class="section_title">Datos del archivo</div>
 

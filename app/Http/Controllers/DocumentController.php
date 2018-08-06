@@ -25,7 +25,10 @@ class DocumentController extends Controller
 
         DB::table('documents')->insert($data);
 
-        return "Succes!";
+        $success = 'OK';
+
+        return view('upload')->with('success', $success);
+
     }
 
     public function search(Request $request){

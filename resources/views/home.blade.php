@@ -17,7 +17,7 @@
 			<div class="barra_navegacion">
 				<div class="contenedor_links">
 					<a class="link_izq" href="{{ route('home') }}">Buscar</a>
-					<a class="link_der" href="{{ route('upload') }}">Upload</a>
+					<a class="link_der" href="{{ route('upload') }}">Subir</a>
 				</div>
 			</div>
 
