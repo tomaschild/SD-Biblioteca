@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/test', function () {
+    return view('test');
+});
+
 Route::get('/results', ['uses' => 'DocumentController@search'])->name('results');
 
 Route::get('/upload', function () {
