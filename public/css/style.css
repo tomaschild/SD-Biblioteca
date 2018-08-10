@@ -54,8 +54,10 @@
 }
 
     .home-link:hover {
+        font-weight: bolder;
         color: white;
         text-decoration: none;
+        letter-spacing: .35rem;
     }
 
 .home-input {
@@ -75,17 +77,62 @@
 }
 
     .nav-title:hover {
-        color: white;
-        text-align: none;
+        color: red;
     }
 
 .nav-item-link {
-    letter-spacing: .2rem;
+    letter-spacing: .15rem;
     font-size: .8rem;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(230, 230, 230);
+    color: rgb(200, 200, 200);
+    transition: all .5s ease;
+    font-weight: bold;
 }
 
     .nav-item-link:hover {
         color: white;
+    }
+
+.upload-form {
+    height: 100vh;
+}
+
+.form-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    height: 60vh;
+    width: 60vw;
+    background-color: rgb(245, 245, 245);
+    border-radius: .3rem;
+}
+
+.form-title-area {
+    padding-top: 4vh;
+}
+
+.form-title {
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+    padding-bottom: 3vh;
+    border-bottom: .1rem solid red;
+}
+
+.form-content {
+    padding-top: 3vh;
+}
+
+.form-label {
+
+}
+
+.form-btn {
+    border-color: rgb(100, 100, 100);
+    background-color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+    .form-btn:hover {
+        color: rgb(250, 250, 250);
+        border-color: rgba(240, 0, 0, 1);
+        background-color: rgba(240, 0, 0, 0.8);
     }

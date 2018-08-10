@@ -1,13 +1,15 @@
 # SD-Biblioteca
 Laboratorio 2 - Sistemas Distribuidos - Biblioteca Digital
 
-Ubicarse en el directorio y ejecurat el comando:
+Ubicarse en el directorio y siguiente comando para instalar las dependencias:
 
-    php artisan serve --port=8080
-   
-En el navegador entrar a la dirección:
+```shell
+composer install
+```
 
-    localhost:8080              // Home
-    
-    
-    localhost:8080/results      // Resultados
+Luego se debe utilizar el siguiente comando para iniciar la aplicación:
+
+
+```shell
+php artisan serve --port=8080
+```

@@ -23,7 +23,7 @@
                             </div>
                             <hr class="title-subline">
                             <div class="link-area">
-                                <a href="{{ route('upload') }}" class="home-link">UPLOAD</a>
+                                <a href="{{ route('upload_test') }}" class="home-link">UPLOAD</a>
                             </div>
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-md-7">
