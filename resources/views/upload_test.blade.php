@@ -30,7 +30,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="">
+            <div class="wow FadeIn">
                 <div class="container">
                     <div class="row justify-content-center align-items-center upload-form">
                         <div class="col form-wrapper">

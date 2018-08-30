@@ -12,21 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('test');
-})->name('home');
+    return view('welcome');
+})->name('welcome');
 
 Route::get('/test', function () {
     return view('test');
 })->name('test');
 
-Route::get('/upload_test', function() {
-	return view('upload_test');
-})->name('upload_test');
+Route::get('/upload', function() {
+	return view('upload');
+})->name('upload');
 
 Route::get('/results', ['uses' => 'DocumentController@search'])->name('results');
-
-Route::get('/upload', function () {
-    return view('upload');
-});
 
 Route::post('/upload', ['uses' => 'DocumentController@store'])->name('upload'); 

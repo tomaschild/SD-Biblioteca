@@ -1,44 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Agregar un registro</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="{{asset('css/upload.css')}}">
-	<link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
-</head>
-<body>
-	<div class="container_banner">
-		<div class="banner">
-			<div class="barra_navegacion">
-				<div class="contenedor_links">
-					<a class="link_izq" href="{{ route('home') }}">Buscar</a>
-					<a class="link_der" href="{{ route('upload') }}">Subir</a>
-				</div>
-			</div>
-		</div>
-	</div>
+@extends('layouts.master')
+@section('title', 'Upload File')
 
-	<div class="title">Agregar un registro</div>
-	<div class="form_container">
-		@if(!empty($success))
-			<h1>Archivo subido exitosamente</h1>
-		@endif
-		<div class="form_section">
-			<div class="section_title">Datos del archivo</div>
+@section('main-menu')
 
-			<form action="/upload" method="post"> 
-				{!! csrf_field() !!}
-				<input type="text" name="document_title" placeholder="Título del archivo"><br>
-				<input type="text" name="document_author" placeholder="Autor del archivo"><br>
-				<input type="text" name="document_year" placeholder="Año del archivo"><br>
-				<input type="text" name="document_type" placeholder="Tipo de archivo"><br>
-				<input type="submit" name="upload_document" value="Subir">
-			</form>
+@endsection
 
-		</div>
-	</div>
-
-</body>
-</html>
+@section('content')
+	<div class="wow FadeIn">
+        <div class="container">
+            <div class="row justify-content-center align-items-center upload-form">
+                <div class="col form-wrapper">
+                    <div class="container">
+                        <div class="form-title-area">
+                            <h1 class="form-title">Upload File</h1>
+                        </div>
+                        <form action="/upload" method="post" class="form-content">
+                            {!! csrf_field() !!}
+                            <div class="form-group">
+                                <div class="form-row justify-content-center">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="file-title-input" class="form-label">Title</label>
+                                            <input type="text" name="document_title" id="file-title-input" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="file-author-input" class="form-label">Author</label>
+                                            <input type="text" name="document_author" id="file-author-input" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="file-year-input" class="form-label">Year</label>
+                                            <input type="text" name="document_year" id="file-year-input" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="file-type-input" class="form-label">File Type</label>
+                                            <input type="text" name="document_type" id="file-type-input" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="file" class="btn btn-block form-btn" disabled>Choose File</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" name="upload_document" class="btn btn-block form-btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
