@@ -1,3 +1,14 @@
+body {
+    font-family: 'PT Serif', serif;
+    color: rgb(40, 40, 40);
+}
+
+.cuerpo {
+    padding-top: 62px;
+}
+
+/* WELCOME */
+
 .home-wrapper-image {
     height: 100vh;
     background-image: url("../resources/background1.jpeg");
@@ -7,7 +18,7 @@
 
 .home-wrapper {
     height: 100vh;
-    background-color: rgba(0, 0, 30, 0.7);
+    background-image: linear-gradient(170deg, rgba(0, 0, 30, 0.7), rgba(255, 82, 27, 0.2));
     color: white;
 }
 
@@ -17,7 +28,6 @@
 
 .welcome-section {
     padding: 3rem 4rem;
-    /*background-color: rgba(0, 0, 40, 0.7);*/
 }
 
 .title-area {
@@ -35,8 +45,9 @@
 }
 
 .title-subline {
+    width: 600px;
     height: 2px;
-    background-color: red;
+    background-image: linear-gradient(to right, #FF521B, #EF233C, #FF521B);
 }
 
 .link-area {
@@ -45,9 +56,8 @@
 }
 
 .home-link {
-    font-family: 'Montserrat', sans-serif;
     letter-spacing: .3rem;
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: bold;
     color: rgb(200, 200, 200);
     transition: all 0.5s ease;
@@ -64,11 +74,14 @@
     box-shadow: .5rem .5rem 7rem .3rem black;
 }
 
+/* MENU */
+
 .main-menu {
-    background-color: #0A0A28;
+    background-color: rgb(46, 64, 87);
 }
 
 .nav-title {
+    font-size: 1.5rem;
     letter-spacing: .3rem;
     color: rgb(240, 240, 240);
     font-family: 'Modern Antiqua', cursive;
@@ -76,42 +89,41 @@
 }
 
     .nav-title:hover {
-        color: red;
+        color: #FF521B;
     }
 
 .nav-item-link {
     letter-spacing: .15rem;
     font-size: .8rem;
-    font-family: 'Montserrat', sans-serif;
     color: rgb(200, 200, 200);
     transition: all .5s ease;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
     .nav-item-link:hover {
         color: white;
     }
 
+/* UPLOAD */
+
 .upload-form {
     height: 100vh;
 }
 
 .form-wrapper {
-    font-family: 'Montserrat', sans-serif;
-    height: 60vh;
     width: 60vw;
     background-color: rgb(245, 245, 245);
     border-radius: .3rem;
 }
 
 .form-title-area {
-    padding-top: 4vh;
+    padding-top: 30px;
 }
 
 .form-title {
     font-weight: bold;
     color: rgb(60, 60, 60);
-    padding-bottom: 3vh;
+    padding-bottom: 30px;
     border-bottom: .1rem solid red;
 }
 
@@ -121,6 +133,10 @@
 
 .form-label {
 
+}
+
+.upload-input {
+    border-radius: 0;
 }
 
 .form-btn {
@@ -135,3 +151,78 @@
         border-color: rgba(240, 0, 0, 1);
         background-color: rgba(240, 0, 0, 0.8);
     }
+
+/* RESULTS */
+
+.search-area {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.result-title-area {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.result-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.doc-link {
+    color: rgb(40, 40, 40);
+    transition: all ease 0.5s;
+}
+
+    .doc-link:hover {
+        color: red;
+        text-decoration: none;
+    }
+
+.doc-thumb {
+    border: solid .1px rgb(230, 230, 230);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.doc-prev {
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    height: 200px;
+    text-align: center;
+}
+
+.doc-icon {
+    font-size: 5rem;
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+.doc-text {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.doc-title {
+
+}
+
+.doc-author {
+    font-size: .8rem;
+    color: rgb(80, 80, 80);
+}
+
+.doc-year {
+    font-size: .8rem;
+    color: rgb(90, 90, 90);
+}

@@ -7,9 +7,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
 use DB;
 
-class DocumentController extends Controller
-{
-    public function store(Request $request){
+class DocumentController extends Controller {
+
+    public function store(Request $request) {
+
+        $validateData = $request->validate([
+            'document_title' => 'required'
+        ]);
 
     	// return $request->all();
     	$document_title = $request['document_title'];
@@ -31,12 +35,9 @@ class DocumentController extends Controller
 
     }
 
-    public function search(Request $request){
-
+    public function search(Request $request) {
         $busqueda = $request->input('busqueda');
-
         $documents = Document::where('document_title','like',"%$busqueda%")->get();
-
         return view('results')->with('documents', $documents);
     }
 }

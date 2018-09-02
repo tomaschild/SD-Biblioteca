@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/test', function () {
-    return view('test');
-})->name('test');
-
 Route::get('/upload', function() {
 	return view('upload');
 })->name('upload');
